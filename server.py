@@ -22,8 +22,6 @@ app = Flask(__name__)
 def get_images():
 
     page = int(request.json.get('page'))
-    print(request.json)
-    print("wocaonima")
     offset = page * 100
 
     num_images = len(images)
